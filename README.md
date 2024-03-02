@@ -10,11 +10,11 @@ A solution for the classic Water Jug Riddle made famous by the Die Hard 3 movie,
 
 ## Algorithmic Approach
 
-We are using a _Naive Approach_, based on the fact that the problem can be solved simply by repeatedly filling from one bucket to the next until it fills up with the desired amount. This gives us two possible solutions (i.e., filling from bucket X to Y or filling from bucket Y to X), and then we choose the best solution of the two. We believe the problem to be simple enough to use this approach; the arithmetics involved in our algorithm are not complex enough (no data structures are used) to affect performance even when using large values or when a substantial number of steps are needed for the outcome. We do, however, know that the problem can be modeled by means of a _Diophantime Equation_, so we check _a priori_ that Z is divisible by the greatest common divisor of X and Y in order to check the problem’s feasibility.
+We use a _Naive Approach_, based on the fact that the problem can be solved simply by repeatedly filling from one bucket to the next until it fills up with the desired amount. This gives us two possible solutions (i.e., filling from bucket X to Y or filling from bucket Y to X), and then we choose the best solution of the two. We believe the problem to be simple enough to use this approach; the arithmetics involved in our algorithm are not sufficiently complex (no data structures are used) to affect performance even when using large values or when a substantial number of steps are needed for the outcome. We do, however, know that the problem can be modeled by means of a _Diophantime Equation_, so we check _a priori_ that Z is divisible by the greatest common divisor of X and Y in order to check the problem’s feasibility.
 
 ## Running the application
 
-A [Python 3](https://www.python.org/downloads/) installation is the only requirement. To start the server:
+A [Python 3](https://www.python.org/downloads/) installation is the only requirement. To start the server run the following in a terminal:
 
 ```
 python server.py
@@ -22,7 +22,7 @@ python server.py
 
 Please make sure to have port 8000 available.
 
-You can do a POST type request from any method you want, just send a json body to `http://localhost:8000/` with the following format (X, Y, Z are case-sensitive):
+You can do a POST type request from any method you want, just send a JSON body to `http://localhost:8000/` with the following format (X, Y, Z are case-sensitive):
 
 ```
 {
@@ -32,7 +32,7 @@ You can do a POST type request from any method you want, just send a json body t
 }
 ```
 
-Example request using visual studio code’s REST client:
+Example request using Visual Studio Code’s REST client extension:
 
 ```
 POST http://localhost:8000/ HTTP/1.1

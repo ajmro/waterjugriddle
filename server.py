@@ -1,4 +1,4 @@
-def jugs(x, y, z, bol=None):
+def jugs(x, y, z, bol=None): # Main algorithm
     if bol == True:
         de = y
         ha = x
@@ -46,12 +46,12 @@ def jugs(x, y, z, bol=None):
         t += 1
     return [res, t]
         
-def gcd(a, b):
+def gcd(a, b): # Greatest common divisor calculator
     if b == 0:
         return a
     return gcd(b, a % b)
         
-def waterjug(x, y, z):
+def waterjug(x, y, z): # Data validation and output formatting
     values = {'X': x, 'Y': y, 'Z': z}
     if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):
         if x <= 0 or y <= 0 or z <= 0:
@@ -77,6 +77,8 @@ def waterjug(x, y, z):
         'Best Solution step-by-step': solution 
     }
     return res
+
+# Server code
     
 import json 
 from http.server import BaseHTTPRequestHandler, HTTPServer
