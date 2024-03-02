@@ -10,7 +10,7 @@ A solution for the classic Water Jug Riddle made famous by the Die Hard 3 movie,
 
 ## Algorithmic Approach
 
-We use a _Naive Approach_, based on the fact that the problem can be solved simply by repeatedly filling from one bucket to the next until it fills up with the desired amount. This gives us two possible solutions (i.e., filling from bucket X to Y or filling from bucket Y to X), and then we choose the best solution of the two. We believe the problem to be simple enough to use this approach; the arithmetics involved in our algorithm are not sufficiently complex (no data structures are used) to affect performance even when using large values or when a substantial number of steps are needed for the outcome. We do, however, know that the problem can be modeled by means of a _Diophantime Equation_, so we check _a priori_ that Z is divisible by the greatest common divisor of X and Y in order to check the problem’s feasibility.
+We use a _Naive Approach_, based on the fact that the problem can be solved simply by repeatedly filling from one bucket to the next until it fills up with the desired amount. This gives us two possible solutions (i.e., filling from bucket X to Y or filling from bucket Y to X), and then we choose the best solution of the two. We believe the problem to be simple enough to use this approach; the arithmetics involved in our algorithm are not sufficiently complex (no data structures are used) to affect performance even when using large values or when a substantial number of steps are needed for the outcome. We do, however, know that the problem can be modeled by means of a _Diophantine Equation_, so we check _a priori_ that Z is divisible by the greatest common divisor of X and Y in order to check the problem’s feasibility.
 
 ## Running the application
 
@@ -92,7 +92,7 @@ Enter Z value (greater than 0 integer): 3
 
 ## Testing
 
-If you don't feel like manually testing values, we also provide a unit testing script `test.py` (`waterjug.py` needs to be in the same folder) that has several tests already set, with instructions on how to add more on its source code. To run it:
+If you don't feel like manually testing values, we also provide a unit testing script `test.py` (`waterjug.py` needs to be in the same folder) that has several tests already set, with instructions on how to add more in its source code. To run it:
 
 ```
 python test.py
