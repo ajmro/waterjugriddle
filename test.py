@@ -34,7 +34,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(result['Error'], 'No Solution')
         
         # result = json.loads(waterjugrequest(X, Y, Z))  Replace X, Y, Z with desired values
-        # self.assertEqual(result['Error'], 'String')   Replace String with desired error string
+        # self.assertEqual(result['Error'], 'String')   Replace String with expected error string
         
         
 if __name__ == '__main__':
