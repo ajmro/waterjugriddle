@@ -16,7 +16,7 @@ def execute():
             if a > 0:
                 break
         except ValueError:
-            print('Invalid value')
+            pass
         
     while True:
         try:
@@ -24,7 +24,7 @@ def execute():
             if b > 0:
                 break
         except ValueError:
-            print('Invalid value')
+            pass
         
     while True:
         try:
@@ -32,7 +32,7 @@ def execute():
             if c > 0:
                 break
         except ValueError:
-            print('Invalid value')
+            pass
 
     print(waterjugrequest(a, b, c))
     
